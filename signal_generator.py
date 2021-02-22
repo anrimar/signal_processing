@@ -22,7 +22,8 @@ if __name__ == '__main__':
     w_max = 2700
     N = 640
 
-    plt.plot(calculate(n, w_max, N)[0], calculate(n, w_max, N)[1])
+    plt.plot(calculate(n, w_max, N)[0], calculate(n, w_max, N)[1], label = 'n = 12\nw = 2700\nN = 64')
+    plt.legend()
     plt.show()
 
     M = sum(calculate(n, w_max, N)[1]) / N
